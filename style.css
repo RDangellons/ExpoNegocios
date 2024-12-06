@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Transiciones suaves */
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Estilo general para la sección */
+#section1 {
+    position: relative; /* Necesario para posicionar la imagen */
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #section1 .content {
+    z-index: 1; /* Asegura que el contenido esté por encima de la imagen */
+  }
+  
+  /* Imagen en una esquina */
+  .corner-image {
+    position: absolute;
+    top: 50px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la derecha (cambia por 'left' si prefieres la otra esquina) */
+    max-width: 150px; /* Controla el tamaño máximo de la imagen */
+    height: auto; /* Mantén la proporción de la imagen */
+    border-radius: 10px; /* Opcional: redondea las esquinas de la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Opcional: sombra para darle más estilo */
+  }
+  
+  
+  /* Fondo de la sección */
+  #section1 {
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    background-size: cover;
+    padding: 20px; /* Para dar espacio dentro de la sección */
+  }
+  
+  
+  /* Secciones */
+  .section {
+    height: 100vh; /* Ocupa el 100% de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+  }
+  
+  
+  #section2 {
+    background: linear-gradient(to bottom, #11998e, #38ef7d);
+  }
+  
+  #section3 {
+    background: linear-gradient(to bottom, #ff9966, #ff5e62);
+  }
+  
+  #section4 {
+    background: linear-gradient(to bottom, #1f4037, #99f2c8);
+  }
+  
